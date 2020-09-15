@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     currencyBtn.addEventListener('click', () => {
         let request = new XMLHttpRequest();
 
-        //request.open('GET', 'js/daily_json.js');
-        request.open('GET', 'https://www.cbr-xml-daily.ru/daily_json.js');
+        request.open('GET', 'js/daily_json.js');
+        //request.open('GET', 'https://www.cbr-xml-daily.ru/daily_json.js');
         request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
         request.send();
 
